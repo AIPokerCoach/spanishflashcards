@@ -2048,3 +2048,15 @@ input, select, textarea {
 		#footer .copyright a {
 			color: inherit;
 		}
+/* General rule for all images */
+img {
+  max-width: 100%; /* Prevents the image from exceeding its container width */
+  height: auto;    /* Maintains the image's aspect ratio */
+  object-fit: contain; /* Ensures the whole image is visible without cropping */
+}
+
+/* Optional: Specific rules for SVGs */
+img[src$=".svg"] {
+  width: 50px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
